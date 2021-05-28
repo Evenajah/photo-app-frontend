@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="p-grid">
-        <div className="p-col-10 p-offset-2">
+        <div className="p-col-10 p-offset-1">
           <Photos />
         </div>
       </div>

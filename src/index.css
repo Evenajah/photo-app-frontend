@@ -1,13 +1,86 @@
+@import url("primereact/resources/themes/saga-blue/theme.css");
+@import url("primereact/resources/primereact.min.css");
+@import url("primeicons/primeicons.css");
+@import url("primeflex/primeflex.css");
+@import url("react-loader-spinner/dist/loader/css/react-spinner-loader.css");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Mali !important", cursive, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
+  background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  width: 120%;
+  background-color: #483d8b;
+  text-align: left;
+  padding: 20px;
+  position: fixed;
+  z-index: 2;
+}
+
+.header > .p-col > img,
+.header > .p-col > span {
+  vertical-align: middle;
+}
+
+.header-text {
+  font-size: 4vh;
+  margin: 0px 20px 10px 50px;
+  color: white;
+}
+
+.p-card {
+  font-family: "Mali !important", cursive, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.btn-add-photo {
+  position: absolute;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background: #483d8b;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 25px;
+}
+
+.p-dialog {
+  z-index: 9999;
+}
+
+.hide-btn {
+  display: none;
+}
+
+.p-fileupload .p-fileupload-content > img {
+  width: 250px;
+}
+.p-fileupload .p-fileupload-content {
+  padding: 10px;
+}
+
+.width-full-grid {
+  width: -webkit-fill-available;
+}
+
+.spinner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  z-index: 9999;
 }
